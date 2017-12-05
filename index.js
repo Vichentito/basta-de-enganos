@@ -7,11 +7,12 @@ var id,username,score;
 var clientes = [];
 var Scores = [];
 var respuestas = [];
+var port = process.env.PORT || 8080;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-server.listen(8080, () => console.log('Servidor iniciado en 8080'));
+server.listen(port, () => console.log('Servidor iniciado en 8080'));
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/index.html');
