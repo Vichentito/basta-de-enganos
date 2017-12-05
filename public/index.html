@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡BASTA!</title>
+
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body id="base">
+
+		<nav class="navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html"><b id="titulazo">¡BASTA!</b></a>
+			<!-- ES EL FORMATO DE ALERTA. ESTA COMENTADO xD, YA TU PROGRAMALOS PARA QUE SALGA O YO QUE SE.
+			<div class="alert alert-danger" role="alert">Ha ocurrido un error :(.
+				<a href="#" class="alert-link"> Recargar</a>.
+			</div>
+			-->
+		</nav>
+
+		<section id="cover">
+			<div id="cover-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="display-2"><b>¡BASTA!</b></h1><!--Nombre tentativo, puedes cambiarlo xD-->
+							<p>¡Diviértete jugando un clásico con tus amigos (los cuáles no tienes), esta vez sin lápiz ni papel! </p>
+							<form name="no me importa" class="form-inline justify-content-center" method="POST" action="">
+								<div class="form-group"></div>
+								<label class="sr-only">NickName:</label>
+								<input type="text" class="form-control form-control-lg" placeholder="Ella no te ama." id="username">
+								<button type="button" class="btn btn-primary btn-lg" onclick="joinChat()">I want to play</button>
+							</form>
+							<p>Con este nickname te verán tus amigos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+	    function joinChat() {
+	      var username = document.querySelector('#username').value;
+	      if (username.length <= 0) {
+	        alert('El nombre de usuario es requerido.');
+	      } else {
+	        window.location = '/chat/' + username;
+	      }
+	    }
+	    </script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

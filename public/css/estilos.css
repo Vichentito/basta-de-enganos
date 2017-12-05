@@ -1,0 +1,116 @@
+html, body{
+	height: 100%;
+}
+img{
+	max-width: 100%;
+}
+#cover{
+	background: #222 url('../img/fondo2.jpg') center center no-repeat;
+	background-size: cover;
+	color: #fff;
+	height: 91.5%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+#cover-text{
+	width: 100%;
+}
+#cover-text.form-inline {
+
+	padding: 5rem;
+
+}
+#titulazo{
+	font-size: 30px;
+}
+#game{
+	background: #222 url('../img/fondo2.jpg') center center no-repeat;
+}
+#texto-complementario{
+	font-size: 30px;
+}
+#Tabla-juego{
+	font-size: 15px;
+	width: 100%;
+}
+#Tabla-juego, input{
+	border: 0;
+	width: 80px;
+	background: none;
+}
+#Tabla-juego, th{
+	text-align: center;
+}
+#cajita {
+
+	background-size: cover;
+	height: 100%;
+	align-items: center;
+
+}
+#qchao, #lateral {
+	width: 16%;
+}
+#score{
+	background: #222 url('../img/fondo2.jpg') center center no-repeat;
+}
+#boxy {
+	background-size: cover;
+	height: 100%;
+	align-items: center;
+	/*display: flex;*/
+}
+#tablon, table{
+	width: 20%;
+}
+#opciones{
+	background: rgba(104, 255, 225, 0.6);
+	margin-right: 4rem;
+	margin-left: 4rem;
+	padding: 4rem;
+	border-radius: 2rem;
+}
+#opciones2{
+	background: rgba(104, 255, 225, 0.6);
+	margin-right: 8rem;
+	margin-left: 8rem;
+	padding: 4rem;
+	border-radius: 2rem;
+}
+#bord {
+	margin-left: 5rem;
+	padding-left: 4rem;
+	border-left: black solid 5px;
+}
+#t-score {
+	width: 100%;
+}
+
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.loader button {
+  padding: 1rem;
+  color: white;
+  background: none;
+  border: none;
+  border: 4px solid white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
